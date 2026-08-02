@@ -5,9 +5,10 @@ import pandas as pd
 
 from components.dashboard import show_dashboard
 from components.charts import show_charts
-from components.ai_insights import generate_ai_insights
+
 from components.cleaning import show_cleaning
 from components.chat import show_chat
+from components.report import generate_report
 # ================= LOAD CSS =================
 
 def load_css():
@@ -101,7 +102,8 @@ overview_tab, chart_tab, ai_tab, cleaning_tab, chat_tab, report_tab = st.tabs(
     [
         "📊 Overview",
         "📈 Charts",
-        "🧹 Cleaning",
+        "� AI",
+        "�🧹 Cleaning",
         "💬 Chat",
         "📄 Report",
     ]
@@ -119,6 +121,8 @@ with chart_tab:
 
 # ================= AI =================
 
+with ai_tab:
+    st.info("AI analytics features coming soon.")
 
 # ================= CLEANING =================
 
