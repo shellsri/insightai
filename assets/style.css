@@ -1,0 +1,254 @@
+/* ---------------- GOOGLE FONT ---------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html,
+body,
+[class*="css"] {
+    font-family: "Inter", sans-serif;
+}
+
+/* ---------------- APP ---------------- */
+
+.stApp {
+    background: #09090B;
+    color: #FAFAFA;
+}
+
+/* ---------------- REMOVE STREAMLIT BRANDING ---------------- */
+
+#MainMenu,
+footer,
+header {
+    visibility: hidden;
+}
+
+/* ---------------- LAYOUT ---------------- */
+
+.block-container {
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+    max-width: 1450px;
+}
+
+/* ---------------- HEADINGS ---------------- */
+
+h1,
+h2,
+h3,
+h4 {
+    color: white;
+    font-weight: 700;
+}
+
+p,
+label {
+    color: #A1A1AA;
+}
+
+/* ---------------- METRIC CARDS ---------------- */
+
+.metric-card {
+
+    background: #111827;
+
+    border: 1px solid #27272A;
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    transition: .25s;
+
+}
+
+.metric-card:hover {
+
+    border: 1px solid #3B82F6;
+
+    transform: translateY(-4px);
+
+}
+
+/* ---------------- DATAFRAMES ---------------- */
+
+[data-testid="stDataFrame"] {
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    border: 1px solid #27272A;
+
+}
+
+/* ---------------- FILE UPLOADER ---------------- */
+
+[data-testid="stFileUploader"] {
+
+    background: #111827;
+
+    border-radius: 18px;
+
+    border: 1px solid #27272A;
+
+    padding: 18px;
+
+}
+
+/* ---------------- BUTTONS ---------------- */
+
+.stButton>button {
+
+    background: #2563EB;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    height: 45px;
+
+}
+
+.stButton>button:hover {
+
+    background: #1D4ED8;
+
+}
+
+/* ---------------- TABS ---------------- */
+
+.stTabs [role="tab"] {
+
+    background: transparent;
+
+    border-radius: 10px;
+
+    color: #A1A1AA;
+
+    font-weight: 600;
+
+    padding: 10px 20px;
+
+}
+
+.stTabs [aria-selected="true"] {
+
+    background: #111827;
+
+    color: white;
+
+}
+
+/* ---------------- SIDEBAR ---------------- */
+
+section[data-testid="stSidebar"] {
+
+    background: #111827;
+
+    border-right: 1px solid #27272A;
+
+}
+
+/* ---------------- SUCCESS ---------------- */
+
+.stSuccess {
+
+    border-radius: 14px;
+
+}
+
+/* ---------------- INFO ---------------- */
+
+.stInfo {
+
+    border-radius: 14px;
+
+}
+
+/* ---------------- DIVIDER ---------------- */
+
+hr {
+
+    border-color: #27272A;
+
+}
+
+/* =======================
+    KPI GRID
+======================= */
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:18px;
+    margin-top:20px;
+    margin-bottom:35px;
+}
+
+.stat-card{
+
+    background:#111827;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:18px;
+
+    padding:22px;
+
+    transition:.25s;
+
+    box-shadow:
+    0 0 0 rgba(0,0,0,0);
+}
+
+.stat-card:hover{
+
+    transform:translateY(-4px);
+
+    border-color:#3b82f6;
+
+    box-shadow:
+    0 20px 45px rgba(59,130,246,.15);
+
+}
+
+.stat-title{
+
+    color:#9ca3af;
+
+    font-size:14px;
+
+    margin-bottom:8px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+}
+
+.stat-card h2{
+
+    color:white;
+
+    font-size:38px;
+
+    margin:0;
+
+    font-weight:700;
+
+}
+
+.stat-card span{
+
+    color:#6b7280;
+
+    font-size:14px;
+
+}
