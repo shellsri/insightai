@@ -191,32 +191,6 @@ GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
 
 ---
 
-# 📸 Screenshots
-
-## Dashboard
-
-_Add dashboard screenshot here_
-
----
-
-## Charts
-
-_Add charts screenshot here_
-
----
-
-## AI Insights
-
-_Add AI insights screenshot here_
-
----
-
-## Report Export
-
-_Add report screenshot here_
-
----
-
 # 📌 Future Improvements
 
 - Automated anomaly detection
