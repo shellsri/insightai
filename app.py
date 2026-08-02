@@ -57,7 +57,7 @@ if uploaded_file is None:
 # ================= LOAD DATA =================
 
 try:
-    if uploaded_file.name.endswith(".csv"):
+    if uploaded_file.name.lower().endswith(".csv"):
         df = pd.read_csv(uploaded_file)
     else:
         df = pd.read_excel(uploaded_file)
@@ -82,10 +82,7 @@ memory = round(
     1
 )
 
-quality = round(
-    (1 - missing / (rows * cols)) * 100,
-    1
-)
+quality = round((1 - missing / (rows * cols)) * 100, 1) if rows * cols > 0 else 0.0
 
 st.subheader("Workspace Overview")
 
