@@ -7,7 +7,6 @@ from components.dashboard import show_dashboard
 from components.charts import show_charts
 
 from components.cleaning import show_cleaning
-from components.chat import show_chat
 from components.report import generate_report
 # ================= LOAD CSS =================
 
@@ -131,8 +130,6 @@ with cleaning_tab:
 
 # ================= CHAT =================
 
-with chat_tab:
-    show_chat(df)
 
 # ================= REPORT =================
 
